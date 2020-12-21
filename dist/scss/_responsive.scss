@@ -1,0 +1,17 @@
+@import './variables';
+
+@media screen and (max-width: 425px){
+    header{
+        background-color: white;
+        text-align: center;
+        & h1{
+            text-align: cemter;
+            font-family: $logo-fonts;
+        }
+        & .restaurantLocation{
+            width: 100vw;
+            background-color: $location-color;
+            @include displayFlex(center, center, row);
+        }
+    }
+}
