@@ -17,9 +17,13 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   header h1 {
     text-align: cemter;
     font-family: shrikhand;
-    font-weight: 700;
+    font-style: italic;
+    font-weight: 900;
   }
   header .restaurantLocation {
+    border-top: 2px solid #eaeaea;
+    font-family: roboto;
+    font-size: 1.1rem;
     width: 100vw;
     height: 50px;
     background-color: #eaeaea;
@@ -36,6 +40,22 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  header .restaurantLocation i {
+    padding-right: 10px;
+  }
+  header .restaurantMenu {
+    background-color: #f6f6f6;
+  }
+  header .restaurantMenu h2 {
+    padding: 30px;
+    font-family: roboto;
+    font-weight: 900;
+  }
+  header .restaurantMenu h4 {
+    font-family: roboto;
+    font-weight: 300;
+    padding-bottom: 30px;
   }
 }
 

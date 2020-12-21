@@ -7,13 +7,36 @@
         & h1{
             text-align: cemter;
             font-family: $logo-fonts;
+            font-style: italic;
             font-weight: map-get($font-weights, bold);
+
         }
         & .restaurantLocation{
+            border-top: 2px solid $location-color;
+            font-family: $text-fonts;
+            font-size: 1.1rem;
             width: 100vw;
             height: 50px;
             background-color: $location-color;
             @include displayFlex(center, center, row);
+
+            & i{
+                padding-right: 10px;
+            }
+        }
+        & .restaurantMenu{
+            background-color: $button-background;
+            & h2{
+                padding: 30px;
+                font-family: $text-fonts;
+                font-weight: map-get($font-weights, bold );
+                
+            }
+            & h4{
+                font-family: $text-fonts;
+                font-weight: map-get($font-weights, regular);
+                padding-bottom: 30px;
+            }
         }
     }
 }
