@@ -54,8 +54,22 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   }
   header .restaurantMenu h4 {
     font-family: roboto;
+    font-size: 1.2rem;
     font-weight: 300;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+  }
+  header .restaurantMenu button {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f6f6f6;
+    background: #348c8e;
+    background: -webkit-gradient(linear, left bottom, left top, from(#348c8e), color-stop(61%, #b348b0));
+    background: linear-gradient(0deg, #348c8e 0%, #b348b0 61%);
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
   }
 }
 
