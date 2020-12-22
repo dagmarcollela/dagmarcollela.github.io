@@ -46,6 +46,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   }
   header .restaurantMenu {
     background-color: #f6f6f6;
+    padding-bottom: 50px;
   }
   header .restaurantMenu h2 {
     padding: 30px;
@@ -56,7 +57,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     font-family: roboto;
     font-size: 1.2rem;
     font-weight: 300;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
   header .restaurantMenu button {
     font-family: roboto;
@@ -66,10 +67,58 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     background: #348c8e;
     background: -webkit-gradient(linear, left bottom, left top, from(#348c8e), color-stop(61%, #b348b0));
     background: linear-gradient(0deg, #348c8e 0%, #b348b0 61%);
-    width: 200px;
-    height: 50px;
+    max-width: 200px;
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
     border-radius: 50px;
-    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+  }
+  h3 {
+    padding: 40px 0 20px 20px;
+  }
+  .instructions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .instructions .intructionlbl {
+    text-align: center;
+    max-width: 320px;
+    width: 100vw;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: #f6f6f6;
+    font-family: roboto;
+    font-weight: 500;
   }
 }
 
