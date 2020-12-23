@@ -64,15 +64,16 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     font-weight: 900;
     font-size: 1rem;
     color: #f6f6f6;
-    background: #348c8e;
-    background: -webkit-gradient(linear, left bottom, left top, from(#348c8e), color-stop(61%, #b348b0));
-    background: linear-gradient(0deg, #348c8e 0%, #b348b0 61%);
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     max-width: 200px;
     width: 100%;
-    max-height: 50px;
+    max-height: 40px;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   }
   aside {
     display: -webkit-box;

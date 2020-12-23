@@ -5,9 +5,13 @@ $location-color: #eaeaea;
 $button-background: #f6f6f6;
 $dark-background: #353535;
 $white-backgorund: white;
+$color-btn: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 
 $logo-fonts: shrikhand;
 $text-fonts: roboto;
+
+$btn-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
+	0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 
 $font-weights:(
     "regular": 300,
