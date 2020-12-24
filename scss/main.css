@@ -9,16 +9,34 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   margin: 0;
 }
 
+.container {
+  background-color: rosybrown;
+  max-width: 500px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (max-width: 425px) {
   header {
     background-color: white;
     text-align: center;
   }
-  header h1 {
+  header img {
     text-align: cemter;
-    font-family: shrikhand;
-    font-style: italic;
-    font-weight: 900;
+    max-width: 200px;
+    margin-top: 5px;
   }
   header .restaurantLocation {
     border-top: 2px solid #eaeaea;
@@ -92,10 +110,10 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
             flex-direction: column;
     background-color: white;
   }
-  h3 {
+  aside h3 {
     padding: 40px 0 20px 20px;
   }
-  .instructions {
+  aside .instructions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,7 +129,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
             flex-direction: column;
     padding-bottom: 40px;
   }
-  .instructions .intructionlbl {
+  aside .instructions .intructionlbl {
     text-align: left;
     max-width: 320px;
     width: 100vw;
@@ -122,7 +140,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     font-family: roboto;
     font-weight: 500;
   }
-  .instructions .intructionlbl span {
+  aside .instructions .intructionlbl span {
     position: relative;
     float: left;
     right: 25px;
@@ -133,29 +151,27 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     border-radius: 30px;
     text-align: center;
   }
-  .instructions .intructionlbl i {
+  aside .instructions .intructionlbl i {
     position: relative;
     float: left;
     margin-right: 10px;
   }
-}
-
-.main {
-  background-color: rosybrown;
-  max-width: 500px;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: top;
-      -ms-flex-pack: top;
-          justify-content: top;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  main {
+    margin-top: 40px;
+    max-width: 425px;
+    background-color: #f6f6f6;
+  }
+  main .galery {
+    margin-top: 40px;
+  }
+  main .galery h3 {
+    padding-left: 20px;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  main .galery figure img {
+    max-width: 375px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
