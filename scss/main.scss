@@ -1,13 +1,14 @@
 @import './reset';
 @import './variables';
+@import './footer';
 
 
 .container{
-    background-color: rosybrown;
     max-width: 500px;
     width: 100vw;
     @include displayFlex(top, left, column);
 }
+
 @media screen and (max-width: 425px){
     @import './responsive425';
 }

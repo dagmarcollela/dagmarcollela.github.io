@@ -99,10 +99,12 @@ main{
     margin-top: 40px;
     max-width: 425px;
     background-color: $button-background;
+    padding-bottom: 30px;
 
     & .galery{
         margin-top: 40px;
         @include displayFlex(space-between,center,column);
+        
 
         & h3{
             position: relative;
@@ -116,6 +118,7 @@ main{
         & figure{
             text-align: center;
             max-width: 375px;
+            width: 100vw;
             background-color: $white-backgorund;
             margin-top: 30px;
             border-radius: 30px;
