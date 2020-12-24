@@ -68,7 +68,7 @@
         padding-bottom: 40px;
 
         & .intructionlbl{
-            text-align: center;
+            text-align: left;
             max-width: 320px;
             width: 100vw;
             padding: 20px;
@@ -77,6 +77,23 @@
             background-color: $button-background;
             font-family: $text-fonts;
             font-weight: map-get($font-weights, medium);
+
+            & span{
+                position: relative;
+                float: left;
+                right: 25px;
+                background-color: $primary-color;
+                color: $text-white;
+                width: 20px;
+                height: 20px;
+                border-radius: 30px;
+                text-align: center;
+            }
+            & i{
+                position: relative;
+                float: left;
+                margin-right: 10px;
+            }
         }
     }
 }

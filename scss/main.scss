@@ -1,11 +1,10 @@
 @import './reset';
 @import './variables';
-@import './responsiveHeader';
+@import './responsive425';
 
 .main{
     background-color: rosybrown;
-    height: 100vh;
-    max-width: 800px;
+    max-width: 500px;
     width: 100vw;
     @include displayFlex(top, left, column);
 }

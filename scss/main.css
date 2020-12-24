@@ -112,7 +112,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     padding-bottom: 40px;
   }
   .instructions .intructionlbl {
-    text-align: center;
+    text-align: left;
     max-width: 320px;
     width: 100vw;
     padding: 20px;
@@ -122,12 +122,27 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     font-family: roboto;
     font-weight: 500;
   }
+  .instructions .intructionlbl span {
+    position: relative;
+    float: left;
+    right: 25px;
+    background-color: #9356DC;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  .instructions .intructionlbl i {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+  }
 }
 
 .main {
   background-color: rosybrown;
-  height: 100vh;
-  max-width: 800px;
+  max-width: 500px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
