@@ -48,19 +48,6 @@ footer ul li a {
 .container {
   max-width: 500px;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: top;
-      -ms-flex-pack: top;
-          justify-content: top;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 @media screen and (max-width: 425px) {
@@ -69,7 +56,7 @@ footer ul li a {
     text-align: center;
   }
   header img {
-    text-align: cemter;
+    text-align: center;
     max-width: 200px;
     margin-top: 5px;
   }
@@ -146,9 +133,9 @@ footer ul li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -238,6 +225,8 @@ footer ul li a {
     background-color: white;
     margin-top: 30px;
     border-radius: 30px;
+    max-height: 320px;
+    height: 100vh;
   }
   main .galery figure img {
     max-width: 375px;
@@ -253,18 +242,36 @@ footer ul li a {
     font-weight: 900;
     font-size: 1.1rem;
   }
-  main .galery figure h5 {
-    text-align: left;
-    margin-left: 25px;
-    font-family: roboto;
-    font-weight: 300;
-  }
-  main .galery figure i {
+  main .galery .figureCap {
+    width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: relative;
-    float: right;
-    right: 10px;
-    bottom: 30px;
-    font-size: 1.5rem;
+    bottom: 35px;
+  }
+  main .galery .figureCap h5 {
+    padding: 0 0 60px 15px;
+  }
+  main .galery .figureCap i {
+    right: 5px;
+    bottom: 40px;
+  }
+  main .galery .figureCap .fas {
+    color: white;
+  }
+  main .galery .figureCap .fas:hover {
+    color: #99f2d0;
   }
 }
 /*# sourceMappingURL=main.css.map */

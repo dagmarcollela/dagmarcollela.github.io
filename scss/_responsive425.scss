@@ -5,7 +5,7 @@ header{
     background-color: $white-backgorund;
     text-align: center;
     & img{
-            text-align: cemter;
+            text-align: center;
             max-width: 200px;
             margin-top: 5px;
     }
@@ -60,7 +60,7 @@ header{
     }
 }
 aside{
-    @include displayFlex(center, left, column);
+    @include displayFlex(center, unset, column);
     background-color: $white-backgorund;
 
     & h3{
@@ -109,7 +109,6 @@ main{
     & .galery{
         margin-top: 40px;
         @include displayFlex(space-between,center,column);
-        
 
         & h3{
             position: relative;
@@ -127,7 +126,8 @@ main{
             background-color: $white-backgorund;
             margin-top: 30px;
             border-radius: 30px;
-
+            max-height: 320px;
+            height: 100vh;
             & img{
                 max-width: 375px;
                 width: 100vw;
@@ -142,18 +142,26 @@ main{
                 font-weight: map-get($font-weights, bold);
                 font-size: 1.1rem;
             }
+        }
+        & .figureCap{
+            width: 350px;
+            @include displayFlex(space-between,center,row);
+            position: relative;
+            bottom: 35px;
+
             & h5{
-                text-align: left;
-                margin-left: 25px;
-                font-family: $text-fonts;
-                font-weight: map-get($font-weights, regular);
+                padding: 0 0 60px 15px;
             }
             & i{
-                position: relative;
-                float: right;
-                right: 10px;
-                bottom: 30px;
-                font-size: 1.5rem;
+                right: 5px;
+                bottom: 40px;
+            }
+            & .fas{
+                color: $text-white;
+
+                &:hover{
+                    color: $tertiary-color;
+                }
             }
         }
 
