@@ -25,6 +25,24 @@ footer h4 {
 
 footer ul {
   padding: 0 30px 30px 30px;
+  list-style-type: none;
+}
+
+footer ul li {
+  padding: 3px;
+}
+
+footer ul li i {
+  padding-right: 15px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-family: roboto;
 }
 
 .container {
