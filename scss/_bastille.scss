@@ -1,0 +1,27 @@
+header{
+    & .top{
+        @include displayFlex(space-between,center,row);
+        & i{
+            position: relative;
+            left: 10px;
+        }
+        & figure{
+            margin-top: 5px;
+           
+            & img{
+                width: 200px;
+                position: relative;
+                right: 50%;
+            }
+        }
+    }
+}
+aside{
+    & img{
+        max-width: 424px;
+        width: 100vw;
+        max-height: 300px;
+        height: 100vh;
+        
+    }
+}

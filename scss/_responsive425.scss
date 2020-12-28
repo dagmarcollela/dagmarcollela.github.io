@@ -158,10 +158,9 @@ main{
             }
             & .fas{
                 color: $text-white;
-
-                &:hover{
-                    color: $tertiary-color;
-                }
+            }
+            & .fas:hover{
+                color: $tertiary-color;
             }
         }
 

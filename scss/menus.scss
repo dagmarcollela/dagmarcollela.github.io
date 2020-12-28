@@ -1,0 +1,7 @@
+@import './variables';
+@import './footer';
+@import './reset';
+
+@media screen and (max-width: 425px){
+    @import './bastille';
+}
