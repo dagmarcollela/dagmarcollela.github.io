@@ -145,5 +145,34 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   main .plates .entrees .dishes p {
     padding-left: 10px;
   }
+  main .plates input {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 150px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+  main .plates input:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
 }
 /*# sourceMappingURL=menus.css.map */
