@@ -90,7 +90,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   }
   main .main__header {
     width: 100vw;
-    max-width: 425px;
+    max-width: 400px;
     height: 10vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,22 +110,8 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     margin-left: 10px;
   }
   main .main__header i {
-    margin-left: 35%;
-  }
-  main .plates {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    position: relative;
+    width: 30px;
   }
   main .plates .entrees {
     margin-left: 15px;
@@ -153,6 +139,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     position: relative;
     left: 85%;
     bottom: 30%;
+    width: 30px;
   }
   main .plates .entrees .dishes p {
     padding-left: 10px;
