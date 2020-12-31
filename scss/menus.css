@@ -1,5 +1,4 @@
 footer {
-  margin-top: 50px;
   background-color: #353535;
 }
 
@@ -117,6 +116,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   main .plates {
     max-width: 425px;
     width: 100vw;
+    height: 100vh;
   }
   main .plates .entrees {
     margin-left: 15px;
