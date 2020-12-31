@@ -128,7 +128,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   }
   main .plates .entrees .dishes {
     width: 100vw;
-    max-width: 400px;
+    max-width: 390px;
     height: 50px;
     background-color: white;
     margin-top: 10px;
