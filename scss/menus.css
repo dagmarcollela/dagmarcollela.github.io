@@ -90,7 +90,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   }
   main .main__header {
     width: 100vw;
-    max-width: 400px;
+    max-width: 425px;
     height: 10vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,7 +110,8 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     margin-left: 10px;
   }
   main .main__header i {
-    position: relative;
+    position: absolute;
+    margin-left: 85%;
     width: 30px;
   }
   main .plates .entrees {

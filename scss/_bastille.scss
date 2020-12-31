@@ -35,7 +35,7 @@ main{
 
     & .main__header{
         width: 100vw;
-        max-width: 400px;
+        max-width: 425px;
         height: 10vh;
         @include displayFlex(space-between, center, row);
 
@@ -43,7 +43,8 @@ main{
             margin-left: 10px;
         }
         & i{
-            position: relative;
+            position: absolute;
+            margin-left: 85%;
             width: 30px;
         }
      
