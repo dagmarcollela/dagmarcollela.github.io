@@ -156,11 +156,21 @@ main{
                 right: 5px;
                 bottom: 40px;
             }
-            & .fas{
-                color: $text-white;
+            & .far{
+                color: black;
+                z-index: 2;
+                &:hover{
+                    z-index: 1;
+                    color: $secondary-color;
+                }
             }
-            & .fas:hover{
-                color: $tertiary-color;
+            & .greenHeart{
+                color: $text-white;
+                z-index: 1;
+                &:hover{
+                    z-index: 2;
+                    color: $secondary-color;
+                }
             }
         }
 

@@ -266,11 +266,21 @@ footer ul li a {
     right: 5px;
     bottom: 40px;
   }
-  main .galery .figureCap .fas {
-    color: white;
+  main .galery .figureCap .far {
+    color: black;
+    z-index: 2;
   }
-  main .galery .figureCap .fas:hover {
-    color: #99f2d0;
+  main .galery .figureCap .far:hover {
+    z-index: 1;
+    color: #FF79DA;
+  }
+  main .galery .figureCap .greenHeart {
+    color: white;
+    z-index: 1;
+  }
+  main .galery .figureCap .greenHeart:hover {
+    z-index: 2;
+    color: #FF79DA;
   }
 }
 /*# sourceMappingURL=main.css.map */
