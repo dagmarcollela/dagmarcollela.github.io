@@ -110,11 +110,14 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   }
   main .main__header i {
     position: absolute;
-    margin-left: 85%;
+    margin-left: 10%;
     width: 30px;
   }
+  main .main__header .fas {
+    color: white;
+  }
   main .plates {
-    max-width: 425px;
+    max-width: 424px;
     width: 100vw;
     height: 100vh;
   }

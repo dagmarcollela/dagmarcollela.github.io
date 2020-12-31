@@ -44,13 +44,16 @@ main{
         }
         & i{
             position: absolute;
-            margin-left: 85%;
+            margin-left: 10%;
             width: 30px;
+        }
+        & .fas{
+            color: $text-white;
         }
      
     }
     & .plates{
-       max-width: 425px;
+       max-width: 424px;
        width: 100vw;
        height: 100vh;
 
