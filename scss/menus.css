@@ -1,6 +1,5 @@
 footer {
   background-color: #353535;
-  padding-top: 0;
 }
 
 footer h4 {
@@ -84,9 +83,10 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     border-radius: 30px;
     position: relative;
     margin-top: -15%;
-    z-index: 2;
     width: 100vw;
     max-width: 424px;
+    max-height: 950px;
+    height: 120vh;
   }
   main .main__header {
     width: 100vw;

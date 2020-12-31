@@ -29,9 +29,10 @@ main{
     border-radius: 30px;
     position: relative;
     margin-top: -15%;
-    z-index: 2;
     width: 100vw;
     max-width: 424px;
+    max-height: 950px;
+    height: 120vh;
 
     & .main__header{
         width: 100vw;
