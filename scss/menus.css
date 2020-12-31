@@ -79,5 +79,83 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     max-height: 300px;
     height: 100vh;
   }
+  main {
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -15%;
+    z-index: 2;
+    width: 100vw;
+    max-width: 424px;
+  }
+  main .main__header {
+    width: 100vw;
+    max-width: 425px;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .main__header h2 {
+    margin-left: 10px;
+  }
+  main .main__header i {
+    margin-left: 35%;
+  }
+  main .plates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .plates .entrees {
+    margin-left: 15px;
+  }
+  main .plates .entrees h4 {
+    font-family: roboto;
+    font-weight: 300;
+    padding: 30px 0 10px 0;
+  }
+  main .plates .entrees .dishes {
+    width: 100vw;
+    max-width: 400px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+  }
+  main .plates .entrees .dishes .plateName {
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+  main .plates .entrees .dishes .platePrice {
+    position: relative;
+    left: 85%;
+    bottom: 30%;
+  }
+  main .plates .entrees .dishes p {
+    padding-left: 10px;
+  }
 }
 /*# sourceMappingURL=menus.css.map */
