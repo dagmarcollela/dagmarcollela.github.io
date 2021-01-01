@@ -135,6 +135,33 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     font-weight: 300;
     padding: 30px 0 10px 0;
   }
+  main .plates .entrees .check {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: #99f2d0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+  }
+  main .plates .entrees .check i {
+    position: relative;
+    float: right;
+    font-size: 1.5rem;
+    background-color: #99f2d0;
+    color: white;
+    top: 15px;
+    right: 15px;
+    opacity: 100%;
+    text-align: right;
+    -webkit-transition: all 1050ms;
+    transition: all 1050ms;
+  }
+  main .plates .entrees .check i:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
   main .plates .entrees .dishes {
     width: 100vw;
     max-width: 370px;
@@ -144,9 +171,12 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     margin-bottom: 10px;
     border-radius: 10px;
     font-family: roboto;
+    position: relative;
+    -webkit-transition: width 450ms;
+    transition: width 450ms;
   }
   main .plates .entrees .dishes:hover {
-    width: 300px;
+    width: 325px;
   }
   main .plates .entrees .dishes .plateName {
     font-weight: 900;

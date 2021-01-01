@@ -71,6 +71,31 @@ main{
                 font-weight: map-get($font-weights, regular);
                 padding: 30px 0 10px 0;
             }
+            & .check{
+                width: 100vw;
+                max-width: 370px;
+                height: 50px;
+                background-color: $tertiary-color;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                font-family: $text-fonts;
+                & i{
+                    position: relative;
+                    float: right;
+                    font-size: 1.5rem;
+                    background-color:$tertiary-color;
+                    color: $text-white;
+                    top: 15px;
+                    right: 15px;
+                    opacity: 100%;
+                    text-align: right;
+                    transition: all 1050ms;
+                    &:hover{
+                        transform: rotate(360deg);
+                    }
+                }
+            }
             & .dishes{
                 width: 100vw;
                 max-width: 370px;
@@ -80,12 +105,11 @@ main{
                 margin-bottom: 10px;
                 border-radius: 10px;
                 font-family: $text-fonts;
-
+                position: relative;
+                transition: width 450ms;
                 &:hover{
-                    width: 300px;
-
+                    width: 325px;
                 }
-
                 & .plateName{
                     font-weight: map-get($font-weights, bold );
                     font-size: 1.1rem;
