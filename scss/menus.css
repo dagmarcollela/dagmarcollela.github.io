@@ -145,6 +145,9 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
     border-radius: 10px;
     font-family: roboto;
   }
+  main .plates .entrees .dishes:hover {
+    width: 300px;
+  }
   main .plates .entrees .dishes .plateName {
     font-weight: 900;
     font-size: 1.1rem;
