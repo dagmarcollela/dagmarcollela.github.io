@@ -11,6 +11,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
 
 footer {
   background-color: #353535;
+  width: 100vw;
 }
 
 footer h4 {
@@ -49,7 +50,7 @@ footer ul li a {
   width: 100vw;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) and (min-width: 376px) {
   header {
     background-color: white;
     text-align: center;
@@ -281,6 +282,1035 @@ footer ul li a {
   main .galery .figureCap .greenHeart:hover {
     z-index: 2;
     color: #FF79DA;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  header {
+    background-color: white;
+    text-align: center;
+    width: 100vw;
+  }
+  header img {
+    max-width: 300px;
+    margin-top: 5px;
+  }
+  header .restaurantLocation {
+    border-top: 2px solid #eaeaea;
+    font-family: roboto;
+    font-size: 1.4rem;
+    width: 100vw;
+    height: 50px;
+    background-color: #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .restaurantLocation i {
+    padding-right: 10px;
+  }
+  header .restaurantMenu {
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+  }
+  header .restaurantMenu h2 {
+    padding: 30px;
+    font-size: 1.8rem;
+    font-family: roboto;
+    font-weight: 900;
+  }
+  header .restaurantMenu h4 {
+    font-family: roboto;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-bottom: 30px;
+  }
+  header .restaurantMenu button {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 200px;
+    width: 100%;
+    max-height: 50px;
+    height: 100vh;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  header .restaurantMenu button:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+  }
+  aside h3 {
+    padding: 40px 0 20px 20px;
+    font-size: 1.6rem;
+  }
+  aside .instructions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+    max-width: 768px;
+    width: 100vw;
+  }
+  aside .instructions .intructionlbl {
+    text-align: left;
+    max-width: 520px;
+    width: 100vw;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: #f6f6f6;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  aside .instructions .intructionlbl span {
+    position: relative;
+    float: left;
+    right: 25px;
+    background-color: #9356DC;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  aside .instructions .intructionlbl i {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  main {
+    margin-top: 40px;
+    max-width: 768px;
+    width: 100vw;
+    background-color: #f6f6f6;
+    padding-bottom: 30px;
+  }
+  main .galery {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    max-width: 768px;
+  }
+  main .galery h3 {
+    position: relative;
+    right: 30%;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+  main .galery figure {
+    text-align: center;
+    max-width: 718px;
+    width: 100vw;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 30px;
+    max-height: 450px;
+    height: 100vh;
+  }
+  main .galery figure img {
+    max-width: 718px;
+    width: 100vw;
+    max-height: 350px;
+    height: 100vh;
+  }
+  main .galery figure figcaption {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  main .galery .figureCap {
+    max-width: 693px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  main .galery .figureCap h5 {
+    margin-top: -15%;
+    padding: 0 0 0 15px;
+    font-size: 1.2rem;
+  }
+  main .galery .figureCap i {
+    right: 5px;
+    bottom: 60px;
+  }
+  main .galery .figureCap .far {
+    color: black;
+    z-index: 2;
+  }
+  main .galery .figureCap .far:hover {
+    z-index: 1;
+    color: #FF79DA;
+  }
+  main .galery .figureCap .greenHeart {
+    color: white;
+    z-index: 1;
+  }
+  main .galery .figureCap .greenHeart:hover {
+    z-index: 2;
+    color: #FF79DA;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  header {
+    background-color: white;
+    text-align: center;
+    width: 100vw;
+  }
+  header img {
+    max-width: 500px;
+    margin-top: 5px;
+  }
+  header .restaurantLocation {
+    border-top: 2px solid #eaeaea;
+    font-family: roboto;
+    font-size: 2.5rem;
+    width: 100vw;
+    height: 60px;
+    background-color: #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .restaurantLocation i {
+    padding-right: 10px;
+  }
+  header .restaurantMenu {
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+  }
+  header .restaurantMenu h2 {
+    padding: 30px;
+    font-size: 2.5rem;
+    font-family: roboto;
+    font-weight: 900;
+  }
+  header .restaurantMenu h4 {
+    font-family: roboto;
+    font-size: 2.0rem;
+    font-weight: 300;
+    padding-bottom: 30px;
+  }
+  header .restaurantMenu button {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 300px;
+    width: 100%;
+    max-height: 60px;
+    height: 100vh;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  header .restaurantMenu button:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+  }
+  aside h3 {
+    padding: 40px 0 20px 20px;
+    font-size: 2rem;
+  }
+  aside .instructions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+    max-width: 1020px;
+    width: 100vw;
+  }
+  aside .instructions .intructionlbl {
+    text-align: left;
+    max-width: 776px;
+    width: 100vw;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 15px;
+    background-color: #f6f6f6;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 2.3rem;
+  }
+  aside .instructions .intructionlbl span {
+    position: relative;
+    float: left;
+    right: 25px;
+    background-color: #9356DC;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  aside .instructions .intructionlbl i {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+  main {
+    margin-top: 40px;
+    max-width: 1022px;
+    width: 100vw;
+    background-color: #f6f6f6;
+    padding-bottom: 30px;
+  }
+  main .galery {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    max-width: 1020px;
+  }
+  main .galery h3 {
+    position: relative;
+    right: 30%;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 2.7rem;
+  }
+  main .galery figure {
+    text-align: center;
+    max-width: 900px;
+    width: 100vw;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 30px;
+    max-height: 650px;
+    height: 100vh;
+  }
+  main .galery figure img {
+    max-width: 900px;
+    width: 100vw;
+    max-height: 500px;
+    height: 100vh;
+  }
+  main .galery figure figcaption {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+  main .galery .figureCap {
+    max-width: 693px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  main .galery .figureCap h5 {
+    margin-top: -15%;
+    padding: 0 0 0 0;
+    font-size: 2rem;
+  }
+  main .galery .figureCap i {
+    bottom: 80px;
+    font-size: 3rem;
+  }
+  main .galery .figureCap .far {
+    color: black;
+    z-index: 2;
+  }
+  main .galery .figureCap .far:hover {
+    z-index: 1;
+    color: #FF79DA;
+  }
+  main .galery .figureCap .greenHeart {
+    color: white;
+    z-index: 1;
+  }
+  main .galery .figureCap .greenHeart:hover {
+    z-index: 2;
+    color: #FF79DA;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h4 {
+    font-size: 3.5rem;
+  }
+  footer ul li i {
+    font-size: 2.2rem;
+  }
+  footer ul li a {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1023px) {
+  header {
+    background-color: white;
+    text-align: center;
+    width: 100vw;
+  }
+  header img {
+    max-width: 300px;
+    margin-top: 5px;
+  }
+  header .restaurantLocation {
+    border-top: 2px solid #eaeaea;
+    font-family: roboto;
+    font-size: 1.5rem;
+    width: 100vw;
+    height: 60px;
+    background-color: #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .restaurantLocation i {
+    padding-right: 10px;
+  }
+  header .restaurantMenu {
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+  }
+  header .restaurantMenu h2 {
+    padding: 30px;
+    font-size: 2rem;
+    font-family: roboto;
+    font-weight: 900;
+  }
+  header .restaurantMenu h4 {
+    font-family: roboto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 30px;
+  }
+  header .restaurantMenu button {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 260px;
+    width: 100%;
+    max-height: 60px;
+    height: 100vh;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  header .restaurantMenu button:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+  }
+  aside h3 {
+    padding: 40px 0 20px 70px;
+    font-size: 2.7rem;
+  }
+  aside .instructions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+    max-width: 1436px;
+    width: 100vw;
+  }
+  aside .instructions .intructionlbl {
+    text-align: left;
+    max-width: 500px;
+    width: 100vw;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 15px;
+    background-color: #f6f6f6;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 2.1rem;
+  }
+  aside .instructions .intructionlbl span {
+    position: relative;
+    float: left;
+    right: 25px;
+    background-color: #9356DC;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 2.1rem;
+  }
+  aside .instructions .intructionlbl i {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    font-size: 3rem;
+  }
+  main {
+    margin-top: 40px;
+    max-width: 1439px;
+    width: 100vw;
+    background-color: #f6f6f6;
+    padding-bottom: 30px;
+  }
+  main .galery {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    max-width: 1439px;
+  }
+  main .galery h3 {
+    position: relative;
+    right: 30%;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 2.7rem;
+  }
+  main .galery figure {
+    text-align: center;
+    max-width: 600px;
+    width: 100vw;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 30px;
+    max-height: 500px;
+    height: 100vh;
+  }
+  main .galery figure img {
+    max-width: 600px;
+    width: 100vw;
+    max-height: 400px;
+    height: 100vh;
+  }
+  main .galery figure figcaption {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
+  main .galery .figureCap {
+    max-width: 600px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  main .galery .figureCap h5 {
+    margin-top: -15%;
+    padding: 0 0 20px 30px;
+    font-size: 1.3rem;
+  }
+  main .galery .figureCap i {
+    bottom: 80px;
+    font-size: 2rem;
+  }
+  main .galery .figureCap .far {
+    color: black;
+    z-index: 2;
+  }
+  main .galery .figureCap .far:hover {
+    z-index: 1;
+    color: #FF79DA;
+  }
+  main .galery .figureCap .greenHeart {
+    color: white;
+    z-index: 1;
+  }
+  main .galery .figureCap .greenHeart:hover {
+    z-index: 2;
+    color: #FF79DA;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h4 {
+    font-size: 3.5rem;
+  }
+  footer ul li i {
+    font-size: 2.2rem;
+  }
+  footer ul li a {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1439px) {
+  header {
+    background-color: white;
+    text-align: center;
+    width: 100vw;
+  }
+  header img {
+    max-width: 300px;
+    margin-top: 5px;
+  }
+  header .restaurantLocation {
+    border-top: 2px solid #eaeaea;
+    font-family: roboto;
+    font-size: 1.5rem;
+    width: 100vw;
+    height: 60px;
+    background-color: #eaeaea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .restaurantLocation i {
+    padding-right: 10px;
+  }
+  header .restaurantMenu {
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+  }
+  header .restaurantMenu h2 {
+    padding: 30px;
+    font-size: 2rem;
+    font-family: roboto;
+    font-weight: 900;
+  }
+  header .restaurantMenu h4 {
+    font-family: roboto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 30px;
+  }
+  header .restaurantMenu button {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 260px;
+    width: 100%;
+    max-height: 60px;
+    height: 100vh;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  header .restaurantMenu button:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+  }
+  aside h3 {
+    padding: 40px 0 20px 70px;
+    font-size: 2.7rem;
+  }
+  aside .instructions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+    max-width: 2556px;
+    width: 100vw;
+  }
+  aside .instructions .intructionlbl {
+    text-align: left;
+    max-width: 400px;
+    width: 100vw;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 15px;
+    background-color: #f6f6f6;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  aside .instructions .intructionlbl span {
+    position: relative;
+    float: left;
+    right: 25px;
+    background-color: #9356DC;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  aside .instructions .intructionlbl i {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    font-size: 1.6rem;
+  }
+  main {
+    margin-top: 40px;
+    max-width: 1280px;
+    margin-left: 50%;
+    width: 100vw;
+    background-color: #f6f6f6;
+    padding-bottom: 30px;
+  }
+  main .galery {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    max-width: 1280px;
+  }
+  main .galery h3 {
+    position: relative;
+    right: 35%;
+    padding-bottom: 10px;
+    margin-top: 5%;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 2.7rem;
+  }
+  main .galery figure {
+    text-align: center;
+    max-width: 600px;
+    width: 100vw;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 30px;
+    max-height: 500px;
+    height: 100vh;
+  }
+  main .galery figure img {
+    max-width: 600px;
+    width: 100vw;
+    max-height: 400px;
+    height: 100vh;
+  }
+  main .galery figure figcaption {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 5px;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
+  main .galery .figureCap {
+    max-width: 600px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  main .galery .figureCap h5 {
+    margin-top: -15%;
+    padding: 0 0 20px 30px;
+    font-size: 1.3rem;
+  }
+  main .galery .figureCap i {
+    bottom: 80px;
+    font-size: 2rem;
+  }
+  main .galery .figureCap .far {
+    color: black;
+    z-index: 2;
+  }
+  main .galery .figureCap .far:hover {
+    z-index: 1;
+    color: #FF79DA;
+  }
+  main .galery .figureCap .greenHeart {
+    color: white;
+    z-index: 1;
+  }
+  main .galery .figureCap .greenHeart:hover {
+    z-index: 2;
+    color: #FF79DA;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h4 {
+    font-size: 3.5rem;
+  }
+  footer ul li i {
+    font-size: 2.2rem;
+  }
+  footer ul li a {
+    font-size: 2.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
