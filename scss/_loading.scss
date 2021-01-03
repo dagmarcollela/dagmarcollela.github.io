@@ -1,0 +1,47 @@
+.loader-container {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 2;
+
+	.loader {
+		display: flex;
+	}
+
+	.circle {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		margin-right: 10px;
+		animation: loading .6s ease-in-out 5 alternate;
+	}
+
+	.circle:first-child {
+		background-color: #9356dc;
+		animation-delay: 0s;
+	}
+
+	.circle:nth-child(2) {
+		background-color: #ff79da;
+		animation-delay: 0.2s;
+	}
+
+	.circle:nth-child(3) {
+		background-color: #99e2d0;
+		animation-delay: 0.4s;
+		margin-right: 0px;
+	}
+}
+
+@keyframes loading {
+	from {
+		transform: translateY(30px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
