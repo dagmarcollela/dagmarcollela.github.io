@@ -18,9 +18,9 @@ header{
 }
 aside{
     & img{
-        max-width: 422px;
+        max-width: 768px;
         width: 100vw;
-        max-height: 300px;
+        max-height: 350px;
         height: 100vh;  
     }
 }
@@ -30,9 +30,10 @@ main{
     position: relative;
     margin-top: -15%;
     width: 100vw;
-    max-width: 422px;
+    max-width: 768px;
     max-height: 950px;
     height: 120vh;
+    @include displayFlex(unset, center, column);
 
     & .main__header{
         width: 100vw;
@@ -147,4 +148,7 @@ main{
 
         }
     }
+}
+footer{
+    @include displayFlex(unset, center, column);
 }

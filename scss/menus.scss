@@ -5,3 +5,15 @@
 @media screen and (max-width: 425px){
     @import './dishes425';
 }
+@media screen and (max-width: 768px) and (min-width: 424px){
+    @import './dishes768';
+}
+@media screen and (max-width: 1024px) and (min-width: 767px){
+    @import './dishes1024';
+}
+@media screen and (max-width: 1440px) and (min-width: 1023px){
+    @import './dishes1440';
+}
+@media screen and (max-width: 2560px) and (min-width: 1439px){
+    @import './dishes2560';
+}

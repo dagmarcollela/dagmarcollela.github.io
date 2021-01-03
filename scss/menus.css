@@ -1,3 +1,39 @@
+@-webkit-keyframes dishesGradually {
+  0% {
+    height: 212px;
+  }
+  25% {
+    height: 283px;
+  }
+  50% {
+    height: 425px;
+  }
+  75% {
+    height: 566px;
+  }
+  100% {
+    height: 850px;
+  }
+}
+
+@keyframes dishesGradually {
+  0% {
+    height: 212px;
+  }
+  25% {
+    height: 283px;
+  }
+  50% {
+    height: 425px;
+  }
+  75% {
+    height: 566px;
+  }
+  100% {
+    height: 850px;
+  }
+}
+
 footer {
   background-color: #353535;
   width: 100vw;
@@ -220,6 +256,860 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   main .plates input:hover {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 424px) {
+  header .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .top i {
+    position: relative;
+    left: 10px;
+  }
+  header .top figure {
+    margin-top: 5px;
+    position: relative;
+    right: 30%;
+  }
+  header .top figure img {
+    width: 180px;
+  }
+  aside img {
+    max-width: 768px;
+    width: 100vw;
+    max-height: 350px;
+    height: 100vh;
+  }
+  main {
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -15%;
+    width: 100vw;
+    max-width: 768px;
+    max-height: 950px;
+    height: 120vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .main__header {
+    width: 100vw;
+    max-width: 422px;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .main__header .fa-stack {
+    width: 30px;
+    margin-right: 10%;
+  }
+  main .main__header h2 {
+    margin-left: 10px;
+  }
+  main .main__header i {
+    position: absolute;
+    margin-left: 10%;
+    width: 30px;
+  }
+  main .main__header .fas {
+    color: white;
+  }
+  main .plates {
+    max-width: 422px;
+    width: 100vw;
+    max-height: 850px;
+    height: 100vh;
+  }
+  main .plates .entrees {
+    margin-left: 15px;
+  }
+  main .plates .entrees h4 {
+    font-family: roboto;
+    font-weight: 300;
+    padding: 30px 0 10px 0;
+  }
+  main .plates .entrees .check {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: #99f2d0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+  }
+  main .plates .entrees .check i {
+    position: relative;
+    float: right;
+    font-size: 1.5rem;
+    background-color: #99f2d0;
+    color: white;
+    top: 15px;
+    right: 15px;
+    opacity: 100%;
+    text-align: right;
+    -webkit-transition: all 1050ms;
+    transition: all 1050ms;
+  }
+  main .plates .entrees .check i:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  main .plates .entrees .dishes {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+    position: relative;
+    -webkit-transition: width 450ms;
+    transition: width 450ms;
+  }
+  main .plates .entrees .dishes:hover {
+    width: 325px;
+  }
+  main .plates .entrees .dishes .plateName {
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+  main .plates .entrees .dishes .platePrice {
+    position: relative;
+    left: 85%;
+    bottom: 30%;
+    width: 30px;
+  }
+  main .plates .entrees .dishes p {
+    padding-left: 10px;
+  }
+  main .plates input {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 150px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    margin-left: 30%;
+    margin-top: 8%;
+  }
+  main .plates input:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  header .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .top i {
+    position: relative;
+    left: 10px;
+  }
+  header .top figure {
+    margin-top: 5px;
+    position: relative;
+    right: 35%;
+  }
+  header .top figure img {
+    width: 280px;
+  }
+  aside img {
+    max-width: 1024px;
+    width: 100vw;
+    max-height: 350px;
+    height: 100vh;
+  }
+  main {
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -15%;
+    width: 100vw;
+    max-width: 1024px;
+    max-height: 950px;
+    height: 120vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .main__header {
+    width: 100vw;
+    max-width: 422px;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .main__header .fa-stack {
+    width: 30px;
+    margin-right: 10%;
+  }
+  main .main__header h2 {
+    margin-left: 10px;
+  }
+  main .main__header i {
+    position: absolute;
+    margin-left: 10%;
+    width: 30px;
+  }
+  main .main__header .fas {
+    color: white;
+  }
+  main .plates {
+    max-width: 422px;
+    width: 100vw;
+    max-height: 850px;
+    height: 100vh;
+  }
+  main .plates .entrees {
+    margin-left: 15px;
+  }
+  main .plates .entrees h4 {
+    font-family: roboto;
+    font-weight: 300;
+    padding: 30px 0 10px 0;
+  }
+  main .plates .entrees .check {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: #99f2d0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+  }
+  main .plates .entrees .check i {
+    position: relative;
+    float: right;
+    font-size: 1.5rem;
+    background-color: #99f2d0;
+    color: white;
+    top: 15px;
+    right: 15px;
+    opacity: 100%;
+    text-align: right;
+    -webkit-transition: all 1050ms;
+    transition: all 1050ms;
+  }
+  main .plates .entrees .check i:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  main .plates .entrees .dishes {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+    position: relative;
+    -webkit-transition: width 450ms;
+    transition: width 450ms;
+  }
+  main .plates .entrees .dishes:hover {
+    width: 325px;
+  }
+  main .plates .entrees .dishes .plateName {
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+  main .plates .entrees .dishes .platePrice {
+    position: relative;
+    left: 85%;
+    bottom: 30%;
+    width: 30px;
+  }
+  main .plates .entrees .dishes p {
+    padding-left: 10px;
+  }
+  main .plates input {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 150px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    margin-left: 30%;
+    margin-top: 8%;
+  }
+  main .plates input:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1023px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .top i {
+    position: relative;
+    right: 100%;
+  }
+  header .top figure {
+    margin-top: 5px;
+    position: relative;
+  }
+  header .top figure img {
+    width: 280px;
+  }
+  aside img {
+    max-width: 1024px;
+    width: 100vw;
+    max-height: 350px;
+    height: 100vh;
+  }
+  main {
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -15%;
+    width: 100vw;
+    max-width: 1024px;
+    max-height: 950px;
+    height: 120vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .main__header {
+    width: 100vw;
+    max-width: 422px;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .main__header .fa-stack {
+    width: 30px;
+    margin-right: 10%;
+  }
+  main .main__header h2 {
+    margin-left: 10px;
+  }
+  main .main__header i {
+    position: absolute;
+    margin-left: 10%;
+    width: 30px;
+  }
+  main .main__header .fas {
+    color: white;
+  }
+  main .plates {
+    max-width: 422px;
+    width: 100vw;
+    max-height: 850px;
+    height: 100vh;
+  }
+  main .plates .entrees {
+    margin-left: 15px;
+  }
+  main .plates .entrees h4 {
+    font-family: roboto;
+    font-weight: 300;
+    padding: 30px 0 10px 0;
+  }
+  main .plates .entrees .check {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: #99f2d0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+  }
+  main .plates .entrees .check i {
+    position: relative;
+    float: right;
+    font-size: 1.5rem;
+    background-color: #99f2d0;
+    color: white;
+    top: 15px;
+    right: 15px;
+    opacity: 100%;
+    text-align: right;
+    -webkit-transition: all 1050ms;
+    transition: all 1050ms;
+  }
+  main .plates .entrees .check i:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  main .plates .entrees .dishes {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+    position: relative;
+    -webkit-transition: width 450ms;
+    transition: width 450ms;
+  }
+  main .plates .entrees .dishes:hover {
+    width: 325px;
+  }
+  main .plates .entrees .dishes .plateName {
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+  main .plates .entrees .dishes .platePrice {
+    position: relative;
+    left: 85%;
+    bottom: 30%;
+    width: 30px;
+  }
+  main .plates .entrees .dishes p {
+    padding-left: 10px;
+  }
+  main .plates input {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 150px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    margin-left: 30%;
+    margin-top: 8%;
+  }
+  main .plates input:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1439px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .top i {
+    position: relative;
+    right: 100%;
+  }
+  header .top figure {
+    margin-top: 5px;
+    position: relative;
+  }
+  header .top figure img {
+    width: 280px;
+  }
+  aside img {
+    max-width: 1024px;
+    width: 100vw;
+    max-height: 700px;
+    height: 100vh;
+  }
+  main {
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -15%;
+    width: 100vw;
+    max-width: 1024px;
+    max-height: 950px;
+    height: 120vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .main__header {
+    width: 100vw;
+    max-width: 422px;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .main__header .fa-stack {
+    width: 30px;
+    margin-right: 10%;
+  }
+  main .main__header h2 {
+    margin-left: 10px;
+  }
+  main .main__header i {
+    position: absolute;
+    margin-left: 10%;
+    width: 30px;
+  }
+  main .main__header .fas {
+    color: white;
+  }
+  main .plates {
+    max-width: 422px;
+    width: 100vw;
+    max-height: 850px;
+    height: 100vh;
+  }
+  main .plates .entrees {
+    margin-left: 15px;
+  }
+  main .plates .entrees h4 {
+    font-family: roboto;
+    font-weight: 300;
+    padding: 30px 0 10px 0;
+  }
+  main .plates .entrees .check {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: #99f2d0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+  }
+  main .plates .entrees .check i {
+    position: relative;
+    float: right;
+    font-size: 1.5rem;
+    background-color: #99f2d0;
+    color: white;
+    top: 15px;
+    right: 15px;
+    opacity: 100%;
+    text-align: right;
+    -webkit-transition: all 1050ms;
+    transition: all 1050ms;
+  }
+  main .plates .entrees .check i:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  main .plates .entrees .dishes {
+    width: 100vw;
+    max-width: 370px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: roboto;
+    position: relative;
+    -webkit-transition: width 450ms;
+    transition: width 450ms;
+  }
+  main .plates .entrees .dishes:hover {
+    width: 325px;
+  }
+  main .plates .entrees .dishes .plateName {
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+  main .plates .entrees .dishes .platePrice {
+    position: relative;
+    left: 85%;
+    bottom: 30%;
+    width: 30px;
+  }
+  main .plates .entrees .dishes p {
+    padding-left: 10px;
+  }
+  main .plates input {
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #f6f6f6;
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    max-width: 150px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    border: white;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    margin-left: 30%;
+    margin-top: 8%;
+  }
+  main .plates input:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  footer {
+    max-width: 1024px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 30px 30px 0 0;
   }
 }
 /*# sourceMappingURL=menus.css.map */
