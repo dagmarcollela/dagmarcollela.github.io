@@ -646,18 +646,18 @@ footer ul li a {
   header {
     background-color: white;
     text-align: center;
-    width: 100vw;
   }
   header img {
-    max-width: 500px;
+    text-align: center;
+    max-width: 200px;
     margin-top: 5px;
   }
   header .restaurantLocation {
     border-top: 2px solid #eaeaea;
     font-family: roboto;
-    font-size: 2.5rem;
+    font-size: 1.1rem;
     width: 100vw;
-    height: 60px;
+    height: 50px;
     background-color: #eaeaea;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -682,27 +682,26 @@ footer ul li a {
   }
   header .restaurantMenu h2 {
     padding: 30px;
-    font-size: 2.5rem;
     font-family: roboto;
     font-weight: 900;
   }
   header .restaurantMenu h4 {
     font-family: roboto;
-    font-size: 2.0rem;
+    font-size: 1.2rem;
     font-weight: 300;
     padding-bottom: 30px;
   }
   header .restaurantMenu button {
     font-family: roboto;
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #f6f6f6;
     background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
     background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
-    max-height: 60px;
-    height: 100vh;
+    max-height: 40px;
+    height: 100%;
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
@@ -737,7 +736,6 @@ footer ul li a {
   }
   aside h3 {
     padding: 40px 0 20px 20px;
-    font-size: 2rem;
   }
   aside .instructions {
     display: -webkit-box;
@@ -754,20 +752,17 @@ footer ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 40px;
-    max-width: 1020px;
-    width: 100vw;
   }
   aside .instructions .intructionlbl {
     text-align: left;
-    max-width: 776px;
+    max-width: 320px;
     width: 100vw;
     padding: 20px;
     border-radius: 50px;
-    margin-top: 15px;
+    margin-top: 10px;
     background-color: #f6f6f6;
     font-family: roboto;
     font-weight: 500;
-    font-size: 2.3rem;
   }
   aside .instructions .intructionlbl span {
     position: relative;
@@ -775,22 +770,19 @@ footer ul li a {
     right: 25px;
     background-color: #9356DC;
     color: white;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 30px;
     text-align: center;
-    font-size: 2rem;
   }
   aside .instructions .intructionlbl i {
     position: relative;
     float: left;
     margin-right: 10px;
-    font-size: 2rem;
   }
   main {
     margin-top: 40px;
-    max-width: 1022px;
-    width: 100vw;
+    max-width: 425px;
     background-color: #f6f6f6;
     padding-bottom: 30px;
   }
@@ -809,32 +801,29 @@ footer ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100vw;
-    max-width: 1020px;
   }
   main .galery h3 {
     position: relative;
     right: 30%;
     padding-bottom: 10px;
-    margin-top: 5%;
     font-family: roboto;
     font-weight: 900;
-    font-size: 2.7rem;
+    font-size: 1.5rem;
   }
   main .galery figure {
     text-align: center;
-    max-width: 900px;
+    max-width: 375px;
     width: 100vw;
     background-color: white;
     margin-top: 30px;
     border-radius: 30px;
-    max-height: 650px;
+    max-height: 320px;
     height: 100vh;
   }
   main .galery figure img {
-    max-width: 900px;
+    max-width: 375px;
     width: 100vw;
-    max-height: 500px;
+    max-height: 250px;
     height: 100vh;
   }
   main .galery figure figcaption {
@@ -843,11 +832,10 @@ footer ul li a {
     margin-top: 5px;
     font-family: roboto;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 1.1rem;
   }
   main .galery .figureCap {
-    max-width: 693px;
-    width: 100vw;
+    width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -862,15 +850,14 @@ footer ul li a {
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
+    bottom: 35px;
   }
   main .galery .figureCap h5 {
-    margin-top: -15%;
-    padding: 0 0 0 0;
-    font-size: 2rem;
+    padding: 0 0 60px 15px;
   }
   main .galery .figureCap i {
-    bottom: 80px;
-    font-size: 3rem;
+    right: 5px;
+    bottom: 40px;
   }
   main .galery .figureCap .far {
     color: black;
@@ -887,18 +874,6 @@ footer ul li a {
   main .galery .figureCap .greenHeart:hover {
     z-index: 2;
     color: #FF79DA;
-  }
-  footer {
-    text-align: center;
-  }
-  footer h4 {
-    font-size: 3.5rem;
-  }
-  footer ul li i {
-    font-size: 2.2rem;
-  }
-  footer ul li a {
-    font-size: 2.3rem;
   }
 }
 
