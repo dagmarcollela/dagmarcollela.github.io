@@ -16,12 +16,12 @@
 @media screen and (max-width: 768px) and (min-width: 426px){
     @import './responsive768';
 }
-@media screen and (max-width: 1024px) and (min-width: 767px){
+@media screen and (max-width: 1024px) and (min-width: 769px){
     @import './responsive1024';
 }
-@media screen and (max-width: 1440px) and (min-width: 1023px){
+@media screen and (max-width: 1440px) and (min-width: 1025px){
     @import './responsive1440';
 }
-@media screen and (max-width: 2560px) and (min-width: 1439px){
+@media screen and (max-width: 2560px) and (min-width: 1441px){
     @import './responsive2560';
 }

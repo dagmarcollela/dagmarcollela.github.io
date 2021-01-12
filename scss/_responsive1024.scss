@@ -1,6 +1,9 @@
 header{
     background-color: $white-backgorund;
     text-align: center;
+    & figure{
+        width: 100vw;
+    }
     & img{
             text-align: center;
             max-width: 200px;
@@ -22,6 +25,7 @@ header{
     & .restaurantMenu{
         background-color: $button-background;
         padding-bottom: 50px;
+        width: 100vw;
         & h2{
             padding: 30px;
             font-family: $text-fonts;
@@ -59,9 +63,11 @@ header{
 aside{
     @include displayFlex(center, unset, column);
     background-color: $white-backgorund;
+    width: 100vw;
 
     & h3{
         padding: 40px 0 20px 20px;
+        margin-left: 30%
     }
     & .instructions{
         @include displayFlex(space-between,center,column);
@@ -99,19 +105,23 @@ aside{
 }
 main{
     margin-top: 40px;
-    max-width: 425px;
+    overflow: auto;
+    max-width: 1024px;
+    width: 100vw;
     background-color: $button-background;
     padding-bottom: 30px;
-
     & .galery{
         margin-top: 40px;
         @include displayFlex(space-between,center,column);
-
+        flex-wrap: wrap;
+        max-height: 1000px;
+        width: 100vw;
+        max-width: 1024px;
+        overflow: auto;
         & h3{
-            position: relative;
-            right: 30%;
-            padding-bottom: 10px;
-            
+            position: absolute;
+            right: 80%;
+            margin-top: -2%;
             font-family: $text-fonts;
             font-weight: map-get($font-weights, bold);
             font-size: 1.5rem;
@@ -125,6 +135,7 @@ main{
             border-radius: 30px;
             max-height: 320px;
             height: 100vh;
+            overflow: auto;
             & img{
                 max-width: 375px;
                 width: 100vw;
@@ -141,11 +152,11 @@ main{
             }
         }
         & .figureCap{
-            width: 350px;
+            width: 100vw;
+            max-width: 350px;
             @include displayFlex(space-between,center,row);
             position: relative;
             bottom: 35px;
-
             & h5{
                 padding: 0 0 60px 15px;
             }
@@ -172,4 +183,9 @@ main{
         }
 
     }
+}
+footer{
+    background-color: $dark-background;
+    width: 100vw;
+    text-align: center;
 }
