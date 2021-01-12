@@ -902,6 +902,7 @@ footer ul li a {
   header {
     background-color: white;
     text-align: center;
+    margin-left: 20%;
   }
   header figure {
     width: 100vw;
@@ -994,6 +995,7 @@ footer ul li a {
             flex-direction: column;
     background-color: white;
     width: 100vw;
+    margin-left: 20%;
   }
   aside h3 {
     padding: 40px 0 20px 20px;
@@ -1044,7 +1046,8 @@ footer ul li a {
   }
   main {
     margin-top: 40px;
-    margin-left: 50%;
+    margin-left: 10%;
+    overflow: auto;
     max-width: 1500px;
     width: 100vw;
     background-color: #f6f6f6;
@@ -1068,10 +1071,13 @@ footer ul li a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-height: 1000px;
+    width: 100vw;
+    max-width: 1500px;
+    overflow: auto;
   }
   main .galery h3 {
     position: absolute;
-    right: 80%;
+    right: 85%;
     font-family: roboto;
     font-weight: 900;
     font-size: 1.5rem;
@@ -1085,6 +1091,7 @@ footer ul li a {
     border-radius: 30px;
     max-height: 320px;
     height: 100vh;
+    overflow: auto;
   }
   main .galery figure img {
     max-width: 375px;
@@ -1101,7 +1108,8 @@ footer ul li a {
     font-size: 1.1rem;
   }
   main .galery .figureCap {
-    width: 350px;
+    width: 100vw;
+    max-width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1144,6 +1152,7 @@ footer ul li a {
   footer {
     background-color: #353535;
     width: 100vw;
+    margin-left: 10%;
     text-align: center;
   }
 }
