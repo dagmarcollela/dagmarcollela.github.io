@@ -31,11 +31,3 @@ $font-weights:(
     align-items: $alingItens;
     flex-direction: $direction;
 }
-
-@keyframes dishesGradually {
-    0%      {height: 212px;}
-    25%     {height: 283px;}
-    50%     {height: 425px;}
-    75%     {height: 566px;}
-    100%    {height: 850px;}
-}
